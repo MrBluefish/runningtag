@@ -9,17 +9,28 @@
   </head>
   <body>
     <header>
-        <div class="navflex">
-            <nav class="navbar">
-              <ul class="top-list">
-                <li class="nav-button"><a href="./index.html">Home</a></li>
-                <li class="nav-button"><a href="./about.html">About</a></li>
-                <li class="nav-button"><a href="./blog.html">Blog</a></li>
-                <li class="nav-button"><a href="./search.html">Search</a></li>
-              </ul>
-            </nav>
-            </div>
-    </header>
+        <section>
+          <div class="flex-container">
+            <img class="header-img-left" src="./images/RunningTag.com (Logo)2/1.png">
+            <img class="header-img" type="button" src="./images/RunningTag.com (Logo)2/2.png">
+            <img class="header-img-right" src="./images/RunningTag.com (Logo)2/3.png">
+          <script>
+            document.getElementById('logoButton').addEventListener('click', function() {
+              window.location.href = 'https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=runningtag.com&itc=mya_dom_srch&pl_id=1&key=mya_domain_search';
+            });
+          </script>
+          <div class="navflex">
+          <nav class="navbar">
+            <ul class="top-list">
+              <li class="nav-button"><a href="./index.html">Home</a></li>
+              <li class="nav-button"><a href="./about.html">About</a></li>
+              <li class="nav-button"><a href="./blog.html">Blog</a></li>
+              <li class="nav-button"><a href="./search.html">Search</a></li>
+            </ul>
+          </nav>
+          </div>
+        </div>
+      </header>
     <h1>Welcome to RunningTag.com</h1>
     <div class="card" onclick="toggleVisibility()">
         <div class="card-inner" id="card-1">
