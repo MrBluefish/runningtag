@@ -8,31 +8,54 @@
 </head>
 <body>
   <!-- Header Section -->
-  <header>
-    <nav class="navbar">
-      <ul class="top-list">
-        <li class="nav-button"><a href="./index.html">Home</a></li>
-        <li class="nav-button"><a href="#">About</a></li>
-        <li class="nav-button"><a href="./blog.html">Blog</a></li>
-        <li class="nav-button"><a href="./search.html">Search</a></li>
-      </ul>
-    </nav>
+    <header>
+      <section>
+        <div class="flex-container">
+          <img class="header-img-left" src="./images/RunningTag.com (Logo)2/1.png">
+          <img class="header-img" type="button" src="./images/RunningTag.com (Logo)2/2.png">
+          <img class="header-img-right" src="./images/RunningTag.com (Logo)2/3.png">
+        <script>
+          document.getElementById('logoButton').addEventListener('click', function() {
+            window.location.href = 'https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=runningtag.com&itc=mya_dom_srch&pl_id=1&key=mya_domain_search';
+          });
+        </script>
+        <div class="navflex">
+        <nav class="navbar">
+          <ul class="top-list">
+            <li class="nav-button"><a href="./index.html">Home</a></li>
+            <li class="nav-button"><a href="./about.html">About</a></li>
+            <li class="nav-button"><a href="./blog.html">Blog</a></li>
+            <li class="nav-button"><a href="./search.html">Search</a></li>
+          </ul>
+        </nav>
+        </div>
+      </div>
+    </header>
   </header>
 
   <!-- Main Content Section for Search -->
-  <main>
-    <section class="search-container">
-      <h1>Search RunningTag.com</h1>
-      <form action="search-results.html" method="GET"> <!-- Assuming a search-results.html file for displaying results -->
-        <input type="search" name="q" placeholder="Enter search terms..." required>
+ 
+    <form id="searchForm">
+        <input type="text" id="searchQuery" placeholder="Search the web...">
         <button type="submit">Search</button>
-      </form>
-    </section>
+    </form>
+
+    <script>
+        document.getElementById('searchForm').onsubmit = function() {
+            var query = document.getElementById('searchQuery').value;
+            var searchURL = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+            window.open(searchURL, '_blank');
+            return false; // Prevent the form from submitting normally
+        };
+    </script>
+</body>
+</html>
+
   </main>
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2023 The Sabucco Syndicate. All rights reserved.</p>
+    <p>&copy; 2024 Sabucco Webcraft and Design. All rights reserved.</p>
   </footer>
 </body>
 </html>
