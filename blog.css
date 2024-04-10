@@ -64,7 +64,7 @@ body {
     justify-content: center; /* Center children horizontally */
     align-items: center; /* Center children vertically */
     flex-direction: row;
-    background-color: #333;
+    background-color: #155263;
     margin: -1em;
     margin-bottom: 0;
   }
